@@ -1,0 +1,40 @@
+.box-container{
+    height: 200px;
+    width: 300px;
+    background-color: darkgoldenrod;
+    border: 2px solid black;
+    margin: 10px;
+
+}
+.box-container:first-child{
+    background-color: chartreuse;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+}
+.box-container:nth-child(4){
+ background-color: aqua;   
+ position: fixed;
+ 
+}
+.box-container:nth-child(7){
+    background-color: aliceblue;
+    position: sticky;
+    top: 10%;
+}
+.box-container_i{
+    width: 300px;
+    height: 200px;
+    border: 2px black solid;
+    margin: 10px;
+}
+.a,.b,.c{
+    width: 30px;
+    height: 20px;
+    border: 1px gold solid;
+    margin: 10px; 
+    background-image: url('/rolls\ royce.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
