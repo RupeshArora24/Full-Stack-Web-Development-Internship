@@ -18,23 +18,34 @@
         last_name="Padhiyar";
 
         //how the data is represented in js in output
-        const demo = document.getElementById("demo")
+        let demo = document.getElementById("demo")
         demo.innerHTML="HI";
         document.write("<h1 style='color:Tomato;'> I am King KHAN</h1style=>")
         window.alert("You know who is king khan?")
         console.log("RPA is King of the world")
 
         //number methods
-        let num = 10;
+        let num = 10; let num2;
         let num1 = 10.456789123
         console.log(num.toExponential())
         console.log(typeof(num))
         console.log(typeof(num.toString()))
         console.log(num.toExponential())
         const demo1 = document.getElementById("demo1")
-        console.log(demo1.innerHTML=num1.toFixed(3))
-        demo1.innerHTML=num1.toPrecision(4)
-        
+        console.log(demo1.innerHTML=num1.toFixed(2))
+        console.log(demo1.innerHTML=num1.toPrecision(5))
+        num2=parseInt("9980") //here 9980 is represented as a string and if we put succh as abc9980 it will give nan and type as undefined
+        console.log(typeof(num2))
+
+        //STRING METHODS
+        //Escape charcters
+
+        let string = 'I am the King.'
+        console.log(string)
+        let string1 = 'You din\'t reply'
+        let string2 = 'You din\" t replied'
+        demo.innerHTML=string1,string2
+        console.log(string1,string2)
 </script>
 </body>
 </html>
