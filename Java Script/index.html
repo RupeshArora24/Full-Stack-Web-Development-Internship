@@ -10,21 +10,31 @@
     <h2 id="demo"></h2>
     <h3 id="demo1"></h3>
     <script>
+
+
         //declaration of varible in js
+
+
         let first_name;
         var last_name;
         const middle_name ="Jignesh";
         first_name="Ramesh";
         last_name="Padhiyar";
 
+
         //how the data is represented in js in output
+
+
         let demo = document.getElementById("demo")
         demo.innerHTML="HI";
         document.write("<h1 style='color:Tomato;'> I am King KHAN</h1style=>")
         window.alert("You know who is king khan?")
         console.log("RPA is King of the world")
 
+
         //number methods
+
+
         let num = 10; let num2;
         let num1 = 10.456789123
         console.log(num.toExponential())
@@ -37,8 +47,10 @@
         num2=parseInt("9980") //here 9980 is represented as a string and if we put succh as abc9980 it will give nan and type as undefined
         console.log(typeof(num2))
 
+
         //STRING METHODS
         //Escape charcters
+
 
         let string = 'I am the King.'
         console.log(string)
@@ -46,6 +58,78 @@
         let string2 = 'You din\" t replied'
         demo.innerHTML=string1,string2
         console.log(string1,string2)
-</script>
+        name = 'Hello I am Rupesh Arora'
+        console.log(name.indexOf("r"))
+        console.log(name.indexOf("A",4))//here name after 4 indexes the 0will start from space aftter o and from there new indexes will get counted.
+        console.log(name.lastIndexOf("a"))
+        console.log(name.lastIndexOf("r",4))//a=0 r=1 o=2 r=3 A=4 now count from space will start A=-1 as it s back of it 
+        console.log(name.startsWith("H"))
+        console.log(name.startsWith("R"))
+        console.log(name.endsWith("H"))
+        console.log(name.endsWith("a"))
+        console.log(name.startsWith("H"))
+
+        //.replace(to_replace,with_replaced)
+
+        console.log(name.replace("Hello","Rupesh"))
+
+        //.slice(start,stop)
+
+        console.log(name.slice(3,15))
+        console.log(name.slice(5)) //it is started from 5
+        console.log(name.slice(0,5)) // start from 0
+
+        //.substring(start,stop) 
+
+        console.log(name.substring(3,9))
+        console.log(name.substring(9))
+        console.log(name.substr(9))
+
+
+        //ARRAY METHODS
+
+        const cars = ["audi","BMW","RollsRoyce"]
+        console.log(cars.toString())
+        console.log(cars.join("A"))
+        console.log(cars.push("Benz"))
+        console.log(cars)
+        console.log(cars.pop())
+        console.log(cars)
+
+
+        //OBJECTS
+
+        const object ={Brand_name:"Tata", Car_name : "Tata Nexon", Car_orderno:4455, Engine_cc:[2244,5577]}
+        console.log(object)
+
+
+
+        //Functions
+
+        function toCelsius(Fahrenheit){
+            return (5/9)*(Fahrenheit-32);
+        }
+
+        document.getElementById("demo").innerHTML=toCelsius(77);
+        
+
+
+
+        //Arrow function
+        //basiclyy arrow function has noo need to use the function keyword
+
+        const hello=()=>{
+              return "Hello world"
+        }
+        document.getElementById("demo").innerHTML=hello();
+        
+        
+        </script>
+
+    
+
+
+        
+
 </body>
 </html>
